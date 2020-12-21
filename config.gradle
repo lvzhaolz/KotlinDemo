@@ -1,0 +1,20 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ext {
+    android = [
+            buildToolsVersion: "29.0.2",
+            compileSdkVersion: 29,
+            minSdkVersion    : 21,
+            targetSdkVersion : 29,
+    ]
+    versions = [
+            androidSupportSdkVersion: "29.0.0"
+    ]
+    dependencies = [
+            "support-annotations": 'androidx.annotation:annotation:1.0.0',
+            "support-v4"         : 'androidx.legacy:legacy-support-v4:1.0.0',
+            "appcompat-v7"       : 'androidx.appcompat:appcompat:1.0.0',
+            "cardview-v7"        : 'androidx.cardview:cardview:1.0.0',
+            "palette-v7"         : 'androidx.palette:palette:1.0.0',
+            "recyclerview-v7"    : 'androidx.recyclerview:recyclerview:1.0.0',
+    ]
+}
