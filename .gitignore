@@ -12,3 +12,10 @@
 /captures
 .externalNativeBuild
 .cxx
+/.idea/
+/gradle/wrapper/
+/.gitignore
+/gradle.properties
+/gradlew
+/gradlew.bat
+/gradle/wrapper/
