@@ -25,44 +25,44 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun test1() {
-        NetworkEngine.singleRequest(
+        NetworkManager.singleRequest(
             request = {
                 LogUtils.d(Thread.currentThread().name)
-                NetworkEngine.retrofit.create(Api::class.java).test1()
+                NetworkManager.retrofit.create(Api::class.java).test1()
             },
             success = {
                 LogUtils.d(it, Thread.currentThread().name)
             }
-        )
+        ).request()
     }
 
     fun test2() {
-        NetworkEngine.singleRequest(
+        NetworkManager.singleRequest(
             request = {
                 LogUtils.d(Thread.currentThread().name)
-                NetworkEngine.retrofit.create(Api::class.java).test2()
+                NetworkManager.retrofit.create(Api::class.java).test2()
             },
             success = {
                 LogUtils.d(it, Thread.currentThread().name)
             }
-        )
+        ).request()
     }
 
     fun test3() {
-        NetworkEngine.singleRequest(
+        NetworkManager.singleRequest(
             request = {
                 LogUtils.d(Thread.currentThread().name)
-                NetworkEngine.retrofit.create(Api::class.java).test3()
+                NetworkManager.retrofit.create(Api::class.java).test3()
             },
             success = {
                 LogUtils.d(it, Thread.currentThread().name)
             }
-        )
+        ).request()
     }
 }
 
 interface Api {
-    @GET("/app/test")
+    @GET("/app/test1")
     suspend fun test1(): TestResponseBean<String>
 
     @GET("/app/test2")
