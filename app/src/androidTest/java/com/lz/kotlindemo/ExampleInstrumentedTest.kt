@@ -1,4 +1,4 @@
-package com.sunnada.kotlindemo
+package com.lz.kotlindemo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

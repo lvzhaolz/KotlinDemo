@@ -1,4 +1,4 @@
-package com.sunnada.kotlindemo
+package com.lz.kotlindemo
 
 import org.junit.Test
 
